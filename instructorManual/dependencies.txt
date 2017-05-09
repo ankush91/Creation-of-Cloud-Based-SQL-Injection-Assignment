@@ -1,0 +1,51 @@
+--------****VIRTUAL MACHINE & CLOUD SET UP RESOURCES****-------
+
+->THE VIRTUAL MACHINE (Ubuntu 16.0.4) was configured on drexel cci's cloud services platform with the following details.
+
+->Project Name: CS377
+
+->This project received the following resources:
+
+1 Instance
+2 CPU Cores
+4 GB of RAM
+0 public/floating IP addresses
+0 GB of additional space for volumes or snapshots
+0 Networks
+0 Subnets
+0 Routers
+
+->The following people have access to this project via the Cloud Dashboard: Marcello Balduccini and Ankush Israney
+
+->Each member of this group listed above can access the Cloud Dashboard (where the instance/VM can be launched) with their DrexelOne/Blackboard credentials at: https://cloud.cci.drexel.edu/dashboard
+Documentation about using the cloud resources and most common questions/issues is located here: https://docs.cci.drexel.edu/display/cloud/Drexel+Cloud
+Especially useful is the "How-to" section: https://docs.cci.drexel.edu/display/cloud/How-to+articles, which you should read before creating an instance (a virtual server).
+
+->Please note:  Drexel Cloud is not HIPAA compliant.  Therefore, you should not use your cloud project space, instances(VMs), or any other cloud resources, to use, access, store, transmit, receive, etc. any healthcare or medical data, or do anything else that would fall under HIPAA regulation.  
+
+->Additionally, please remember that instances (VMs), volumes, images, etc. are not backed up.  Therefore it's highly recommended that you backup any important data from the instance to somewhere outside of the cloud, on a regular basis  (snapshot is not safe option for this as the snapshot resides in the cloud).
+
+------------------------SOME OTHER NOTES--------------------
+
+*****Important note on Linux kernel updates
+Certain kernels are vulnerable to a bug which causes a kernel panic on certain versions of guest (Instance/VM) kernels combined with other characteristics of the host. Details of the issue are documented here: https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1379340
+
+If you are using a Debian/Ubuntu-based instance, please make sure your kernel is newer or equal to:
+
+3.16.0-29.39 for 3.16 series
+3.13.0-44.73 for 3.13 series
+The above fixes were released in early January 2015. Unfortunately, we still see some instances running the affected kernel versions. They will keep crashing randomly until you update. If your instance is crashing due to this bug, it means you probably have not installed updates on the affected instance(s) since early January 2015 or prior. In addition to the kernel fixes, there have also been several security updates and patches, including several vulnerability fixes for OpenSSL, some of which are marked as HIGH severity. It’s very important that you keep up with updates on all of your instances to help ensure that you have the most stable and secure environment possible.
+
+*****Important note on spawning new instances (reminder)
+Operating System image available on the cloud are rather current, but are not always the most up to date. This means that any instance you spawn from them is vulnerable to the latest bugs and security problems discovered since the image was created. Every time you launch a new instance, it’s important to also immediately update all packages using the system’s update manager (yum/aptitude/Windows Update/etc).
+
+**In case you encounter any technical issues, please submit a ticket in our Jira Service Desk by visiting https://tracker.cci.drexel.edu/servicedesk/customer/portal/2
+
+-----------------***LAMP SERVER INSTALLATION GUIDE***-----------
+
+->The following LAMP Server installation resources were used to set up apache server with mysql database with corresponding php,shell script, html and css source files in /var/www/html/*
+
+->THE FOLLOWING LINK WAS USED AS REFERENCE TO SET UP THE LAMP SERVER:
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
+
+

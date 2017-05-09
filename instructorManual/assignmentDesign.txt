@@ -1,0 +1,108 @@
+IDEA
+====
+The students are given a VM that contains some simple web pages. They don't have
+the root password and there is no other user available for logging in.
+
+They have to break through the authentication mechanism of the web pages
+in order to reach a page that will give them the answer to the assignment, 
+to be entered in BBlearn.
+
+To break in, the students have to perform an SQL injection in the "Main page"
+in order to modify the password of user "me" in table "Users" to something they pick
+(and encode properly via SHA1). Then, they can use the login page to get to the
+page that gives them the answer for BBlearn.
+
+To help them, the students are given a trimmed-down version of the VM, the sandbox VM.
+They know the root password of the sandbox VM, which they can use to look at the code of
+the web pages and inspect the database.
+They also know the password to be used on the web page, so they can play with it.
+However, the sandbox VM does NOT include the code that calculates the answer to be
+entered in BBlearn, i.e., it does not include file calculate.php or calculate.py, discussed 
+below. So, they can play with it, but they cannot use it to get the answer to the assignment.
+
+
+VM SETUP
+========
+	* Take an existing Linux VM for VirtualBox with a web server and a database server 
+	  set up in it. Disable the graphical interface on the VM. Just leave the traditional
+	  text-based console enabled. Students must connect to the VM's web server
+	  using a web browser on the host machine.
+
+	* Please set up the virtual machine to have static IP 192.168.3.77 and prepare 
+	  instructions that the students can use to set up the virtual machine's virtual
+	  networking components as needed so that the host machine can access the
+	  VM at that IP.
+
+	* Edit the VM as follows.
+
+	* Set root password to v3m7C7$  (keep it from students!)
+
+	* Create a databasex
+ called "Application"
+	  - Create a table "Users"
+	    + Create string columns "Login" and "SHA1Password"
+	    + "Users" table has a single user "me"
+	    + Set user's SHA1Password to something that is not a SHA1-produced string, e.g. "ABC"
+	  - Create a table "RoomAssignments"
+	    + Create string columns "Course" and "Room"
+	    + Add some entries to the table. Use Rush rooms and CS courses.
+	      Content accuracy does not matter
+
+	* Write PHP or Python code for the web pages listed below
+	* The main page (http://192.168.3.77) should take them to the "Main page" described below
+	* Write the PHP/Python+SQL code of the "Main page" so that an attacker can use SQL injection
+	  to modify the password of user "me" in table "Users" to something they pick (and
+	  encode properly via SHA1)
+
+	* Write a program that generates 600 question-answer pairs.
+	* The question is a random string of length 6 formed from uppercase letters, lower case letters 
+	  and numbers. For each question, the answer is calculated as SHA1("ack " + question).
+	* Output the question-answer pairs to a file, so that each is on its own line and the
+	  line has format:
+FIB<tab>Given string <question> the system produces:<tab><answer>
+	  where:
+	    <tab> is the tabulation character (just one!)
+	    <question> is the question string
+	    <answer> is the answer string produced by SHA1
+
+	* Provide the question-answer file to me
+	* Make sure the oracle page produces the expected answer for the given question string
+
+	* Provide me with a zip file containing all files needed to run the VM
+
+
+SET UP OF THE SANDBOX VM
+========================
+	* Set user's SHA1Password in DB to SHA1("pwd")
+	* Remove file calculate.php or calculate.py, which calculates the answer for the "Oracle"
+	  page, but leave the rest of the web pages
+	* Change root password to "toor"
+	* Provide students with the root password and with "me"'s password (i.e., "pwd")
+
+	* Provide me with a zip file containing all files needed to run the VM
+
+
+WEB PAGES
+=========
+Main page: retrieves and displays classroom assignments
+	* The content is retrieved from DB table "RoomAssignments" in database "Application"
+	* Contains a textbox in which the user can enter a course and click "submit"
+	  - The page issues an SQL query that fetches the room for the given course
+	  - The PHP/Python+SQL code is written in such a way that an attacker can use SQL 
+	    injection to modify the password of user "me" in table "Users" to something they 
+	    pick (and encode properly via SHA1)
+	* The page has a link to the login page (see below)
+
+Login page
+	* authentication is based on the "Users" table in database "Application"
+	* The password entered in the password box is transformed via SHA1 and then 
+	  matched to SHA1Password column for the given Login in the "Users" table
+	* Upon successful authentication, it takes user to the "oracle" page
+
+"Oracle" page:
+	* user enters the string provided by BBlearn in a textbox and clicks submit
+	* when submit is clicked, a new page calculate.php or calculate.py is opened, which 
+	  calculates the answer as described above for the question-answer file
+	  (Please do not store the valid question-answers on the VM. Calculate the 
+	  answers on the fly)
+	* answer is displayed to the user, telling them to enter it in BBlearn
