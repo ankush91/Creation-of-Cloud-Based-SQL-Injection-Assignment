@@ -1,7 +1,7 @@
 # SQL-Injection-Assignment-Creation
 This is a fully functional student Assignment Design, Development &amp; Instruction Manual as part of Teaching Assistant work done at Drexel Univeristy. This Assignment was part of course work in Software Security offered at Drexel in Winter, 2017. The aim of the assignment was to set-up a fully functional system on Drexel's Cloud platform so that student's can hack into the system using SQL injection to retrieve answers to certain questions posed to them on Drexel's Blackboard Learn. 
 
-# FILE ORGANIZATION
+# File Orgranization
 
 --code:
 	->src: Contains entire code to with seperate a readme.txt file for set-up & instructions.
