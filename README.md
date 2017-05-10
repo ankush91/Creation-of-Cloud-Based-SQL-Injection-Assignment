@@ -4,10 +4,10 @@ This is a fully functional student Assignment Design, Development &amp; Instruct
 # File Orgranization
 
 * code:
-	*src: Contains entire code to with seperate a readme.txt file for set-up & instructions.
+	* src: Contains entire code to with seperate a readme.txt file for set-up & instructions.
 
 * gradingScale:
-	*hw1Deeadlines.xlxs: The assignment was a timed assignment. Deadlines were used for the gradual reduction of points with different submission/completion time intervals.
+	* hw1Deeadlines.xlxs: The assignment was a timed assignment. Deadlines were used for the gradual reduction of points with different submission/completion time intervals.
 
 --studentInstructions:
 	->HW-v1.docx & HW-v1.pdf: These documents were used for student instructions.
