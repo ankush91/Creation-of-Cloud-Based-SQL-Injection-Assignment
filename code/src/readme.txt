@@ -31,4 +31,4 @@
 	+1 - main Database Application
 	+1 - test Database in my ID (TA's ID - 14057308)
 
-	*deletedb.sh deletes all Application<studentID> databases included in file students.txt + the TA database (Application<14057308>) over here.
+	*deletedb.sh deletes all Application<studentID> databases included in file students.txt + the TA database (Application<14057308>).
