@@ -32,3 +32,5 @@
 	+1 - test Database in my ID (TA's ID - 14057308)
 
 	*deletedb.sh deletes all Application<studentID's in students.txt> db's & (Application<14057308>).
+
+-> students.txt includes all 8-digit numeric (although any length should be fine) student Id's.
