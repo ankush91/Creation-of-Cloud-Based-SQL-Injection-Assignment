@@ -1,4 +1,4 @@
-***THIS FILE DESCRIBES THE CONTENTS OF THE FOLDER src***
+***THIS FILE BRIEFLY DESCRIBES THE CONTENTS OF THE FOLDER src***
 
 ->.php files:
 *answer.php - calculates answer for question of type text
