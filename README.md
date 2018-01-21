@@ -1,7 +1,7 @@
-# Creation of Drexel's Open-Stack Cloud Based SQL Injection Assignment 
+# Implementation of Drexel's Open-Stack Cloud Based SQL Injection Assignment for Undergraudate students
 This project work was a fully functional Design, Development, Deployment and Monitoring of a Student Assignment as part of Teaching Assistant work done at Drexel Univeristy. The Assignment was included as part of course work in Software Security offered at Drexel in Winter, 2017. The aim of the assignment was to set-up a fully functional system on Drexel's Cloud platform so that student's can hack into the system using SQL injection to retrieve answers to certain questions posed to them on Drexel's Blackboard Learn. The project here also includes an Instructor-Manual to easily use, deploy and modify this assignment as per various difficulty levels.
 
-# File Orgranization
+## File Orgranization
 
 * code:
 	* src: Contains entire code to with seperate a readme.txt file for set-up & instructions.
@@ -23,7 +23,7 @@ This project work was a fully functional Design, Development, Deployment and Mon
 
 	* pictures: Contains all .png files used in workFlow.docx & workFlow.pdf.
 
-# Reference Contacts
+## Reference Contacts
 
 Ankush Israney - ankushisraney@gmail.com </br>
 Dr. Marcello Balduccini - marcello.balduccini@gmail.com
