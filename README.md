@@ -1,5 +1,4 @@
-# Drexel's Open-Stack Cloud Based SQL Injection Assignment: 
-##  Used by students of CS 377
+# Drexel's Open-Stack Cloud Based SQL Injection: For students of CS 377 (Software Security)
 This project work was a fully functional Design, Development, Deployment and Monitoring of a Student Assignment as part of Teaching Assistant work done at Drexel Univeristy. The Assignment was included as part of course work in Software Security offered at Drexel in Winter, 2017. The aim of the assignment was to set-up a fully functional system on Drexel's Cloud platform so that student's can hack into the system using SQL injection to retrieve answers to certain questions posed to them on Drexel's Blackboard Learn. The project here also includes an Instructor-Manual to easily use, deploy and modify this assignment as per various difficulty levels.
 
 ## File Orgranization
