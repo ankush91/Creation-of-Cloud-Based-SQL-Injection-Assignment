@@ -3,16 +3,16 @@ This project work was a fully functional Design, Development, Deployment and Mon
 
 ## File Orgranization
 
-* code:
+* Code:
 	* src: Contains entire code to with seperate a readme.txt file for set-up & instructions.
 
-* gradingScale:
+* Grading Scale:
 	* hw1Deeadlines.xlxs: The assignment was a timed assignment. Deadlines were used for the gradual reduction of points with different submission/completion time intervals.
 
-* studentInstructions:
+* Student Instructions:
 	* HW-v1.docx & HW-v1.pdf: These documents were used for student instructions.
 
-* instructorManual:
+* Course Instructor Manual:
 	* workFlow.docx & workFlow.pdf: These documents contain	the expected work flow for every conceivable action while doing the assignment. It also contains the sample solutions.
 	
 	* assignmentDesign.txt: This document outlines the expectations from the point of view of the instructor(s) setting up this     assignment.
