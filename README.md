@@ -7,24 +7,25 @@ This project work was a fully functional Design, Development, Deployment and Mon
 	* src: Contains entire code to with seperate a readme.txt file for set-up & instructions.
 
 * Grading Scale:
-	* hw1Deeadlines.xlxs: The assignment was a timed assignment. Deadlines were used for the gradual reduction of points with different submission/completion time intervals.
+	* hw1Deeadlines.xlxs: The assignment was a timed assignment. This spreadsheet contains deadlines which were used for the gradual reduction of points at different submission intervals.
 
 * Student Instructions:
-	* HW-v1.docx & HW-v1.pdf: These documents were used for student instructions.
+	* HW-v1.docx & HW-v1.pdf: These documents contain instructions for a student solving the assignment.
 
 * Course Instructor Manual:
-	* workFlow.docx & workFlow.pdf: These documents contain	the expected work flow for every conceivable action while doing the assignment. It also contains the sample solutions.
+	* workFlow.docx & workFlow.pdf: These documents contain	an expected work-flow for every action allowed during the assignment. It also contains an instance of the assignment solution.
 	
 	* assignmentDesign.txt: This document outlines the expectations from the point of view of the instructor(s) setting up this     assignment.
 
-	* dependencies.txt: This file outlines the system configurations as well all relevant cloud & server set-up details.
+	* dependencies.txt: This file outlines system configurations as well all relevant cloud & server set-up details.
 
-	* projectReport.docx & projectReport.pdf: This file explains the entire code-base along with explanation of critical choices made during development for usability/solvability from the student's perspective. 
+	* projectReport.docx & projectReport.pdf: This file explains the code-base along with explanation of critical decisions taken by the student during development from a usability/solvability perspective. 
 
 	* pictures: Contains all .png files used in workFlow.docx & workFlow.pdf.
 
 ## Reference Contacts
 
+* Reach out to us if you have any questions -
 Ankush Israney - ankushisraney@gmail.com </br>
 Dr. Marcello Balduccini - marcello.balduccini@gmail.com
 
